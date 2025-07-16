@@ -4,19 +4,19 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>F.I.R.E. - Official Site</title>
-<!-- Google Fonts for a clean, modern look -->
+<!-- Google Fonts for a clean, authoritative look -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 <style>
   body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* White background for official look */
     color: #222;
     line-height: 1.6;
   }
 
   header {
-    background-color: #222;
+    background-color: #003366; /* Dark blue header */
     color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -25,94 +25,56 @@
   header h1 {
     margin: 0;
     font-size: 3em;
+    letter-spacing: 2px;
   }
 
   nav {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   nav a {
     text-decoration: none;
-    color: #eee;
-    margin: 0 15px;
+    color: #66ccff; /* Light blue links for official tone */
+    margin: 0 20px;
     font-weight: 500;
+    font-size: 1.1em;
   }
 
   nav a:hover {
-    color: #ff4d4d;
+    color: #3399ff;
   }
 
   section {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 50px auto;
     padding: 0 20px;
   }
 
   h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #222;
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
   }
 
   p {
     font-size: 1.1em;
-  }
-
-  /* Placeholder for future document links or media */
-  .resources {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    flex: 1 1 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .card h3 {
-    margin-top: 0;
-  }
-
-  .btn {
     margin-top: 15px;
-    padding: 12px 20px;
-    background-color: #222;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background 0.3s;
   }
 
-  .btn:hover {
-    background-color: #ff4d4d;
-  }
-
-  /* Hidden sections that can be revealed later */
-  .hidden-section {
-    display: none;
+  /* Placeholder for future content */
+  .content-box {
+    background-color: #f0f4f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
     margin-top: 20px;
   }
 
-  /* Embed videos or PDFs */
-  iframe {
-    width: 100%;
-    height: 400px;
-    border: none;
-    border-radius: 8px;
-  }
-
   footer {
-    background-color: #222;
-    color: #aaa;
+    background-color: #003366;
+    color: #ccc;
     text-align: center;
     padding: 30px 20px;
     margin-top: 60px;
@@ -126,7 +88,7 @@
   <h1>F.I.R.E.</h1>
   <nav>
     <a href="#about">About</a>
-    <a href="#resources">Resources</a>
+    <a href="#mission">Mission</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -134,41 +96,34 @@
 <main>
   <!-- About Section -->
   <section id="about">
-    <h2>Welcome to F.I.R.E.</h2>
+    <h2>Official Statement</h2>
     <p>
-      The Foundation for Integrated Resource Enforcement operates behind the scenes to ensure societal stability and progress. Our mission is discreet, effective, and unwavering.
+      The Foundation for Integrated Resource Enforcement (F.I.R.E.) operates in accordance with national standards to maintain societal stability and resource management. Our operations are transparent and designed to serve the public interest.
     </p>
   </section>
 
-  <!-- Resources Section -->
-  <section id="resources">
-    <h2>Official Resources</h2>
-    <div class="resources">
-      <!-- Placeholder cards for future files -->
-      <div class="card">
-        <h3>Confidential Report</h3>
-        <p>Secure access to classified documents. Available soon.</p>
-        <button class="btn" onclick="revealContent('doc')">View Document</button>
-        <div id="doc" class="hidden-section">
-          <p><em>Coming soon: detailed PDF document.</em></p>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Surveillance Footage</h3>
-        <p>Embedded videos for review. Coming soon.</p>
-        <button class="btn" onclick="revealContent('video')">Watch Video</button>
-        <div id="video" class="hidden-section">
-          <!-- Example embed, replace with actual file later -->
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Surveillance Footage"></iframe>
-        </div>
-      </div>
+  <!-- Mission Section -->
+  <section id="mission">
+    <h2>Our Mission</h2>
+    <p>
+      To oversee and coordinate resource distribution, ensure compliance with regulations, and support the safety and security of our community through dedicated oversight and management.
+    </p>
+  </section>
+
+  <!-- Placeholder for future updates -->
+  <section id="updates">
+    <h2>Latest Updates</h2>
+    <div class="content-box">
+      <p>Stay tuned for upcoming reports, community notices, and official statements.</p>
     </div>
   </section>
 
-  <!-- Future Puzzles or Hidden Content -->
-  <section id="hidden">
-    <h2>Future Content & Puzzles</h2>
-    <p>Stay tuned for encrypted files, puzzles, and more resources. Everything is designed to remain unobvious but accessible to those who seek deeper knowledge.</p>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      For inquiries, please contact our main office at <a href="mailto:info@fire.gov" style="color:#66ccff;">info@fire.gov</a>.
+    </p>
   </section>
 </main>
 
@@ -176,17 +131,6 @@
 <footer>
   <p>&copy; 2024 F.I.R.E. | All rights reserved.</p>
 </footer>
-
-<script>
-  function revealContent(id) {
-    const element = document.getElementById(id);
-    if (element.style.display === 'block') {
-      element.style.display = 'none';
-    } else {
-      element.style.display = 'block';
-    }
-  }
-</script>
 
 </body>
 </html>
