@@ -3,63 +3,119 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>F.I.R.E. - Foundation for Integrated Resource Enforcement</title>
+<title>F.I.R.E. - Official Site</title>
+<!-- Google Fonts for a clean, modern look -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+  }
 
-  body {margin: 0;padding: 0; background-color: #0d0d0d; font-family: 'Orbitron', sans-serif; color: #f0f0f0; line-height: 1.6;}
-
-  header {background-color: #1a1a1a;
-    padding: 30px 20px;
-    text-align: center;
-    border-bottom: 2px solid #333;}
-
-  h1 { margin: 0;
-    font-size: 3em;
-    letter-spacing: 3px;
-    color: #ff4d4d;}
-
-  h2 { margin-top: 40px;
-    font-size: 2em;
-    color: #ff4d4d;
-    letter-spacing: 1px;}
-
-  p {max-width: 900px;
-    margin: 15px auto;
-    padding: 0 20px;}
-
-  main {padding: 20px;}
-
-  .section {margin-bottom: 50px;}
-
-  footer {text-align: center; padding: 20px; font-size: 0.9em; color: #888; border-top: 2px solid #333;}
-
-  /* Buttons for hidden content */
-  .secret-btn {background-color: #444; color: #f0f0f0; border: 2px solid #ff4d4d; padding: 10px 20px; margin: 10px 0;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1em;
-    transition: background-color 0.3s;}
-  .secret-btn:hover {background-color: #ff4d4d;color: #fff;}
-
-  /* Hidden area for future files/documents */
-  .hidden-area {display: none;
-    margin-top: 15px;
+  header {
     background-color: #222;
-    padding: 15px;
-    border-radius: 8pxz}
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
 
-  a {color: #ff4d4d; text-decoration: none;}
-  a:hover {text-decoration: underline;}
+  header h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #eee;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+
+  nav a:hover {
+    color: #ff4d4d;
+  }
+
+  section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #222;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  /* Placeholder for future document links or media */
+  .resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card h3 {
+    margin-top: 0;
+  }
+
+  .btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #ff4d4d;
+  }
+
+  /* Hidden sections that can be revealed later */
+  .hidden-section {
+    display: none;
+    margin-top: 20px;
+  }
 
   /* Embed videos or PDFs */
   iframe {
     width: 100%;
-    height: 500px;
+    height: 400px;
     border: none;
     border-radius: 8px;
-    margin-top: 15px;
+  }
+
+  footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
   }
 
 </style>
@@ -68,67 +124,67 @@
 
 <header>
   <h1>F.I.R.E.</h1>
-  <p>Foundation for Integrated Resource Enforcement</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#resources">Resources</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
-  <!-- Introduction -->
-  <div class="section">
-    <h2>Welcome to the Network</h2>
+  <!-- About Section -->
+  <section id="about">
+    <h2>Welcome to F.I.R.E.</h2>
     <p>
-      In every AREA, a DOSE of guidance can make you a VESSEL for progress.  
-      <br><br>
-      Your journey begins here. Decode the messages, explore the files, and uncover the truth behind the system.
+      The Foundation for Integrated Resource Enforcement operates behind the scenes to ensure societal stability and progress. Our mission is discreet, effective, and unwavering.
     </p>
-  </div>
+  </section>
 
-  <!-- Puzzle & Hidden Files -->
-  <div class="section">
-    <h2>Secure Files & Documents</h2>
-    <p>Access future classified documents, videos, and PDFs here. Use the buttons below to reveal more.</p>
-    
-    <!-- Buttons to reveal hidden content -->
-    <button class="secret-btn" onclick="toggleSection('file1')">Access Confidential Report</button>
-    <div class="hidden-area" id="file1">
-      <h3>Classified Report - Sector 7G</h3>
-      <p>[Placeholder for future PDF or document]</p>
-      <a href="#" target="_blank">Download PDF (Coming Soon)</a>
+  <!-- Resources Section -->
+  <section id="resources">
+    <h2>Official Resources</h2>
+    <div class="resources">
+      <!-- Placeholder cards for future files -->
+      <div class="card">
+        <h3>Confidential Report</h3>
+        <p>Secure access to classified documents. Available soon.</p>
+        <button class="btn" onclick="revealContent('doc')">View Document</button>
+        <div id="doc" class="hidden-section">
+          <p><em>Coming soon: detailed PDF document.</em></p>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Surveillance Footage</h3>
+        <p>Embedded videos for review. Coming soon.</p>
+        <button class="btn" onclick="revealContent('video')">Watch Video</button>
+        <div id="video" class="hidden-section">
+          <!-- Example embed, replace with actual file later -->
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Surveillance Footage"></iframe>
+        </div>
+      </div>
     </div>
-    
-    <button class="secret-btn" onclick="toggleSection('video1')">Watch Surveillance Footage</button>
-    <div class="hidden-area" id="video1">
-      <h3>Surveillance Footage - Operation Silent Watch</h3>
-      <!-- Embed future video -->
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-    </div>
-  </div>
+  </section>
 
-  <!-- Cryptic message or puzzle -->
-  <div class="section">
-    <h2>Decode the Cipher</h2>
-    <p>Use your skills to decipher the next step. Hint: The key is in the shadows.</p>
-    <!-- Future interactive cipher puzzle can go here -->
-  </div>
-
-  <!-- Future content placeholder -->
-  <div class="section">
-    <h2>Upcoming Files & Media</h2>
-    <ul>
-      <li>Encrypted PDFs</li>
-      <li>Video Files</li>
-      <li>More Documents</li>
-    </ul>
-  </div>
+  <!-- Future Puzzles or Hidden Content -->
+  <section id="hidden">
+    <h2>Future Content & Puzzles</h2>
+    <p>Stay tuned for encrypted files, puzzles, and more resources. Everything is designed to remain unobvious but accessible to those who seek deeper knowledge.</p>
+  </section>
 </main>
 
+<!-- Footer -->
 <footer>
-  <p>&copy; 2024 F.I.R.E. | Control | Surveillance | Resistance</p>
+  <p>&copy; 2024 F.I.R.E. | All rights reserved.</p>
 </footer>
 
 <script>
-  function toggleSection(id) {const section = document.getElementById(id);
-    if (section.style.display === 'block') 
-    {section.style.display = 'none';} else section.style.display = 'block';}
+  function revealContent(id) {
+    const element = document.getElementById(id);
+    if (element.style.display === 'block') {
+      element.style.display = 'none';
+    } else {
+      element.style.display = 'block';
+    }
   }
 </script>
 
