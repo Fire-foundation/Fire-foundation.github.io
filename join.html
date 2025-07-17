@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>F.I.R.E. - Join the Network</title>
+<!-- Google Fonts for clean look -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+  }
+
+  header {
+    background-color: #003366;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+
+  main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #003366;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #005599;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Join the Network</h1>
+</header>
+
+<main>
+  <h2>Personality Insight & Contact</h2>
+  <form id="surveyForm">
+    <!-- Personality Questions -->
+    <label for="trait1">Do you prefer to work alone or in a team?</label>
+    <select id="trait1" name="trait1" required>
+      <option value="">Select an option</option>
+      <option value="alone">Alone</option>
+      <option value="team">In a team</option>
+    </select>
+
+    <label for="trait2">Are you more of a thinker or a feeler?</label>
+    <select id="trait2" name="trait2" required>
+      <option value="">Select an option</option>
+      <option value="thinker">Thinker</option>
+      <option value="feeler">Feeler</option>
+    </select>
+
+    <label for="trait3">Do you prefer structure or spontaneity?</label>
+    <select id="trait3" name="trait3" required>
+      <option value="">Select an option</option>
+      <option value="structure">Structure</option>
+      <option value="spontaneity">Spontaneity</option>
+    </select>
+
+    <!-- Email input -->
+    <label for="email">Enter your email to stay informed:</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+    <button type="submit">Join Now</button>
+  </form>
+</main>
+
+<script>
+  document.getElementById('surveyForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Here you could add code to send data to your server or API
+    // For demonstration, we'll just show an alert and then close
+
+    alert('Thank you for participating. You will now be redirected.');
+
+    // Optional: Save email and responses somewhere via API
+    
+    // Close the window or redirect
+    window.close();
+    // Or redirect to another page if window.close() is blocked
+    // window.location.href = 'https://yourwebsite.com/thankyou.html';
+});
+</script>
+
+</body>
+</html>
