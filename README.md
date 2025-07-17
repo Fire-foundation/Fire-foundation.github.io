@@ -1,31 +1,37 @@
-# F.I.R.E. - Foundation for Integrated Resource Enforcement
+# F.I.R.E. Official Website Repository
 
-*This repository is a gateway to the unseen, the controlled, and the hidden.*
-
----
-
-**In every AREA, a DOSE of guidance can make you a VESSEL for progress.**
-
-> **Decode the message. Uncover the truth. Resist the control.**
+Welcome to the official repository for the F.I.R.E. organization website. This project is designed to provide a professional, transparent, and user-friendly online presence aligned with our mission to serve and inform the community.
 
 ---
 
-## What is this?
+## Table of Contents
 
-This is the digital front of a covert operation—an immersive experience designed to challenge perceptions and reveal the unseen mechanisms behind societal control.
-
-## How to participate
-
-- Visit the [website](https://yourusername.github.io/your-repo-name/) for the main interface.
-- Look for cryptic clues embedded in the site.
-- Decode messages, solve puzzles, and uncover hidden layers.
-- Share your discoveries—join the resistance.
-
-## Warning
-
-The system monitors all. Resistance is encoded in the details. Proceed with caution.
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ---
+
+## Overview
+
+This repository contains the source code for the F.I.R.E. official website, built with clean, responsive HTML and CSS. It is intended to facilitate easy updates, expansion, and maintenance, ensuring the site remains aligned with our organizational standards.
+
+---
+
+## Project Structure
+
+```plaintext
+/
+├── index.html # Main homepage
+├── join.html # Email collection and personality test page
+├── announcement.html # Public Affairs Announcement page
+├── assets/ # Folder for images, styles, scripts (if any)
+│ └── (optional) # Placeholder for future assets
+└── README.md # This documentation file
 
 ## Note:
 
@@ -38,4 +44,4 @@ This is a fictional project created for artistic and entertainment purposes.
 
 ---
 
-**#FIRE #Resist #Decode #Rebel**
+**#FIRE #VESSEL #AREA #DOSE #CLEAR**
